@@ -553,3 +553,13 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-green-400 {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity, 1));
+}
