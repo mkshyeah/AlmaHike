@@ -4,6 +4,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        colors: {
+          "main-text": "#243c5a",
+          "main-bg": "",
+        },
         header_bg: "url('/media/mointains_panorama.jpeg')",
       },
       fontFamily: {
