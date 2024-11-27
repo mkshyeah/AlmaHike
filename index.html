@@ -15,6 +15,12 @@
       }
     </style>
     <script src="src/app.js" defer></script>
+    <style>
+      td {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+    </style>
   </head>
   <body class="bg-gray-100 text-gray-600 font-sans">
     <!-- Header -->
@@ -73,73 +79,107 @@
         <!-- About Section -->
         <section
           id="about"
-          class="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 py-16"
+          class="h-screen flex justify-between items-center bg-gradient-to-r from-blue-600 to-blue-400 text-white px-5 py-16"
         >
-          <h1 class="text-4xl font-extrabold mb-6">О нас</h1>
-          <p class="text-lg max-w-2xl text-center leading-relaxed">
-            <span class="block mb-4"
-              >AlmaHike — это команда профессионалов, влюбленных в природу и
-              активный отдых. Мы предлагаем уникальные горные маршруты, которые
-              подходят как для новичков, так и для опытных туристов. Наши
-              путешествия позволяют не только насладиться величественными видами
-              гор и лесов, но и испытать себя, преодолевая новые вершины.</span
+          <div class="flex flex-col items-center mx-auto">
+            <h1 class="text-4xl font-extrabold mb-6">О нас</h1>
+            <p class="text-lg max-w-2xl text-center leading-relaxed">
+              <span class="block mb-4"
+                >AlmaHike — это команда профессионалов, влюбленных в природу и
+                активный отдых. Мы предлагаем уникальные горные маршруты,
+                которые подходят как для новичков, так и для опытных туристов.
+                Наши путешествия позволяют не только насладиться величественными
+                видами гор и лесов, но и испытать себя, преодолевая новые
+                вершины.</span
+              >
+              <span class="block mb-4"
+                >Мы уделяем особое внимание безопасности и комфорту наших
+                клиентов, поэтому вся экипировка, которую мы предоставляем, —
+                это высококачественные и проверенные временем товары. Наши гиды
+                — это эксперты, имеющие многолетний опыт работы в горах, и они
+                всегда готовы поделиться своими знаниями и помочь в любой
+                ситуации.</span
+              >
+              <span class="block mb-4"
+                >Мы стремимся вдохновлять людей на приключения и делать активный
+                отдых доступным для каждого. Присоединяйтесь к AlmaHike и
+                откройте для себя мир горных маршрутов и новых горизонтов!</span
+              >
+            </p>
+            <!-- Add a button or call to action -->
+            <a
+              href="#contact"
+              class="mt-8 inline-block px-6 py-3 bg-blue-700 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-blue-800 transition-colors duration-300"
             >
-            <span class="block mb-4"
-              >Мы уделяем особое внимание безопасности и комфорту наших
-              клиентов, поэтому вся экипировка, которую мы предоставляем, — это
-              высококачественные и проверенные временем товары. Наши гиды — это
-              эксперты, имеющие многолетний опыт работы в горах, и они всегда
-              готовы поделиться своими знаниями и помочь в любой ситуации.</span
-            >
-            <span class="block mb-4"
-              >Мы стремимся вдохновлять людей на приключения и делать активный
-              отдых доступным для каждого. Присоединяйтесь к AlmaHike и откройте
-              для себя мир горных маршрутов и новых горизонтов!</span
-            >
-          </p>
-          <!-- Add a button or call to action -->
-          <a
-            href="#contact"
-            class="mt-8 inline-block px-6 py-3 bg-blue-700 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-blue-800 transition-colors duration-300"
+              Связаться с нами
+            </a>
+          </div>
+          <!--Add weather table-->
+          <div
+            class="m-5 p-5 bg-slate-100 rounded-md w-2/5 shadow-xl text-blue-950"
           >
-            Связаться с нами
-          </a>
+            <h2 class="text-2xl mb-2.5 text-gray-800">Погода в горах Алматы</h2>
+            <table class="w-full border-collapse mt-2.5">
+              <tr>
+                <td>Температура:</td>
+                <td id="temp"></td>
+              </tr>
+              <tr>
+                <td>Влажность:</td>
+                <td id="humi"></td>
+              </tr>
+              <tr>
+                <td>Скорость ветра:</td>
+                <td id="wind"></td>
+              </tr>
+              <tr>
+                <td>Индекс безопасности:</td>
+                <td id="safety"></td>
+              </tr>
+            </table>
+          </div>
         </section>
-
-        <!-- Equipment Section -->
-        <section
-          id="equipment"
-          class="h-screen flex flex-col items-center justify-center bg-gray-300"
-        >
-          <h1 class="text-4xl font-bold mb-4">Экипировка</h1>
-          <p class="text-lg max-w-2xl text-center">
-            Все необходимое для вашего путешествия: палатки, рюкзаки, защитное
-            снаряжение и многое другое.
-          </p>
-        </section>
-
-        <!-- Routes Section -->
-        <section
-          id="routes"
-          class="h-screen flex flex-col items-center justify-center bg-gray-400"
-        >
-          <h1 class="text-4xl font-bold mb-4">Маршруты</h1>
-          <p class="text-lg max-w-2xl text-center">
-            Откройте для себя удивительные маршруты в горах, лесах и долинах
-            Алматы.
-          </p>
-        </section>
+        <!-- Псевдоэлемент для градиентового перехода -->
 
         <!-- Contact Section -->
         <section
           id="contact"
-          class="h-screen flex flex-col items-center justify-center bg-blue-600 text-white"
+          class="bg-cover bg-top- py-16 text-white"
+          style="background-image: url('https://morena.kz/large/chimb.jpg')"
         >
-          <h1 class="text-4xl font-bold mb-4">Контакты</h1>
-          <p class="text-lg max-w-2xl text-center">
-            Свяжитесь с нами для записи на маршрут или получения дополнительной
-            информации.
-          </p>
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-center text-white mb-8">
+              Контакты
+            </h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Карточка 1 -->
+              <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <div class="text-blue-600 text-4xl mb-4">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <h2 class="text-xl font-bold text-gray-800">Телефон</h2>
+                <p class="text-gray-600">+7 (777) 023-04-80</p>
+              </div>
+
+              <!-- Карточка 2 -->
+              <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <div class="text-blue-600 text-4xl mb-4">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h2 class="text-xl font-bold text-gray-800">Email</h2>
+                <p class="text-gray-600">info@alma-hike.kz</p>
+              </div>
+
+              <!-- Карточка 3 -->
+              <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <div class="text-blue-600 text-4xl mb-4">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h2 class="text-xl font-bold text-gray-800">Адрес</h2>
+                <p class="text-gray-600">г. Алматы, пр. Достык 103</p>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>
