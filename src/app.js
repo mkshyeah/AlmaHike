@@ -77,3 +77,10 @@ function safetyMeasurement(windSpeed, temp) {
 
 // Запускаем функцию
 getWeather();
+
+//Бургер
+
+document.querySelector(".burger").addEventListener("click", function () {
+  this.classList.toggle("active");
+  document.querySelector(".nav").classList.toggle("open");
+});

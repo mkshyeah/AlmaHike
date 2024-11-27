@@ -9,47 +9,57 @@
       rel="stylesheet"
     />
     <link href="src/output.css" rel="stylesheet" />
-    <style>
-      html {
-        scroll-behavior: smooth; /* Включает плавную прокрутку */
-      }
-    </style>
+    <link rel="stylesheet" href="src/css/index.css" />
     <script src="src/app.js" defer></script>
-    <style>
-      td {
-        padding: 10px;
-        border: 1px solid #ddd;
-      }
-    </style>
   </head>
   <body class="bg-gray-100 text-gray-600 font-sans">
     <!-- Header -->
     <header
       id="navbar"
-      class="bg-white shadow-md fixed w-full top-0 z-10 transform transition-transform duration-300"
+      class="bg-white shadow-md fixed top-0 w-full z-50 transform transition-transform duration-300"
     >
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
-          <!-- Logo -->
+          <!-- Логотип -->
           <a href="#" class="text-2xl font-bold text-blue-600">AlmaHike</a>
 
-          <!-- Navigation -->
-          <nav class="space-x-4">
-            <a href="#about" class="text-gray-700 hover:text-blue-600">О нас</a>
-            <a href="#equipment" class="text-gray-700 hover:text-blue-600"
-              >Экипировка</a
-            >
-            <a href="#routes" class="text-gray-700 hover:text-blue-600"
-              >Маршруты</a
-            >
-            <a href="#contact" class="text-gray-700 hover:text-blue-600"
-              >Контакты</a
-            >
+          <!-- Навигация -->
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#about" class="text-gray-700 hover:text-blue-600"
+                  >О нас</a
+                >
+              </li>
+              <li>
+                <a
+                  href="src/equipment.html"
+                  class="text-gray-700 hover:text-blue-600"
+                  >Экипировка</a
+                >
+              </li>
+              <li>
+                <a
+                  href="src/routes.html"
+                  class="text-gray-700 hover:text-blue-600"
+                  >Маршруты</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
           </nav>
+
+          <!-- Бургер -->
+          <div class="burger">
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
-
     <!-- Hero Section -->
     <div class="relative bg-gray-100">
       <!-- Фон -->
@@ -79,7 +89,7 @@
         <!-- About Section -->
         <section
           id="about"
-          class="h-screen flex justify-between items-center bg-gradient-to-r from-blue-600 to-blue-400 text-white px-5 py-16"
+          class="flex flex-col md:flex-row justify-between items-center bg-gradient-to-r from-blue-600 to-blue-400 text-white px-5 py-16"
         >
           <div class="flex flex-col items-center mx-auto">
             <h1 class="text-4xl font-extrabold mb-6">О нас</h1>
@@ -116,7 +126,7 @@
           </div>
           <!--Add weather table-->
           <div
-            class="m-5 p-5 bg-slate-100 rounded-md w-2/5 shadow-xl text-blue-950"
+            class="m-5 p-5 bg-slate-100 rounded-md w-96 shadow-xl text-blue-950"
           >
             <h2 class="text-2xl mb-2.5 text-gray-800">Погода в горах Алматы</h2>
             <table class="w-full border-collapse mt-2.5">
