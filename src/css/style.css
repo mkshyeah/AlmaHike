@@ -1,63 +1,9 @@
-body {
-  margin: 0;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100px;
-  box-shadow: 1px 1px 7px 0px silver;
-}
-
-.container {
-  width: 90%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  /* Р›РѕРіРѕС‚РёРї */
-  .logo {
-    display: flex;
-    align-items: center;
-    font-family: "Heebo";
-    font-size: x-large;
-  }
-
-  /* РќР°РІРёРіР°С†РёСЏ */
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-
-    li {
-      font-family: "Heebo";
-      list-style: none;
-    }
-  }
-
-  /* Р±РѕРєРѕРІС‹Рµ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹ */
-  .toolbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 20px;
-  }
-}
-
 main {
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
+  margin-top: 150px;
 
   .main-box {
     width: 90%;

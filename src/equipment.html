@@ -3,43 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=<>, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AlmaHike.shop</title>
     <link href="./css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="output.css" rel="stylesheet" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
     </style>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
     </style>
+    <script src="src/app.js" defer></script>
     <style></style>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="logo">AlmaHike</div>
+    <header
+      id="navbar"
+      class="bg-white shadow-md fixed top-0 w-full z-50 transform transition-transform duration-300"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <!-- Логотип -->
+          <a href="#" class="text-2xl font-bold text-blue-600">AlmaHike</a>
 
-        <nav>
-          <a href=""><li>Главная</li></a>
-          <a href=""><li>О нас</li></a>
-          <a href=""><li>Вопросы</li></a>
-          <a href=""><li>Контакты</li></a>
-          <a href=""><li>Рейтинг</li></a>
-        </nav>
+          <!-- Навигация -->
+          <nav class="nav">
+            <ul>
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-gray-700 hover:text-blue-600"
+                  >О нас</a
+                >
+              </li>
+              <li>
+                <a
+                  href="equipment.html"
+                  class="text-gray-700 hover:text-blue-600"
+                  >Экипировка</a
+                >
+              </li>
+              <li>
+                <a href="routes.html" class="text-gray-700 hover:text-blue-600"
+                  >Маршруты</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
 
-        <div class="toolbar">
-          <img
-            src="images/icons8-поиск.svg"
-            alt="поиск"
-            width="30"
-            height="30"
-          />
-          <img
-            src="images/icons8-линии-захвата-32.png"
-            alt="дополнительные дейтсвия"
-            width="30"
-            height="30"
-          />
+          <!-- Бургер -->
+          <div class="burger">
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
@@ -192,6 +212,43 @@
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="bg-cover bg-top- py-16 text-white"
+      style="background-image: url('https://morena.kz/large/chimb.jpg')"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold text-center text-white mb-8">Контакты</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Карточка 1 -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h2 class="text-xl font-bold text-gray-800">Телефон</h2>
+            <p class="text-gray-600">+7 (777) 023-04-80</p>
+          </div>
+
+          <!-- Карточка 2 -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h2 class="text-xl font-bold text-gray-800">Email</h2>
+            <p class="text-gray-600">info@alma-hike.kz</p>
+          </div>
+
+          <!-- Карточка 3 -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h2 class="text-xl font-bold text-gray-800">Адрес</h2>
+            <p class="text-gray-600">г. Алматы, пр. Достык 103</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

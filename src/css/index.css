@@ -1,0 +1,127 @@
+html {
+  scroll-behavior: smooth; /* Включает плавную прокрутку */
+}
+
+section {
+  scroll-margin-top: 70px; /* Учитываем высоту фиксированного хедера */
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.burger {
+  display: none; /* По умолчанию скрыто */
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 30px;
+  cursor: pointer; /* Добавляем курсор указателя */
+}
+
+.burger span {
+  height: 2px;
+  width: 80%;
+  background-color: darkblue;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: darkblue;
+  transition: all 0.3s ease;
+}
+
+.burger::before {
+  top: 0;
+}
+
+.burger::after {
+  bottom: 0;
+}
+
+.burger.active span {
+  transform: scale(0); /* Скрываем центральную полоску */
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+/* Навигация */
+.nav {
+  display: flex;
+  width: 700px;
+  padding: 0 40px;
+  transition: all 0.3s ease;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav.open {
+  display: flex !important;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  z-index: 40;
+  padding: 50px 20px;
+  height: 100vh; /* Устанавливаем высоту в 100% от высоты экрана */
+  overflow-y: auto; /* Добавляем прокрутку, если контент превышает экран */
+  animation: burgerAnimation 0.4s;
+}
+
+.nav.open a {
+  color: white; /* Делаем ссылки белыми */
+}
+
+.nav.open a:hover {
+  color: lightgray; /* Добавляем цвет при наведении */
+}
+
+.nav.open ul {
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@media (max-width: 780px) {
+  .burger {
+    display: flex; /* Показываем кнопку бургер */
+  }
+
+  .nav {
+    display: none; /* По умолчанию скрыта на мобильных */
+  }
+}
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
