@@ -1,5 +1,5 @@
 * {
-  font-family: "Heebo";
+  font-family: "Open Sans";
 }
 
 body,
@@ -45,7 +45,7 @@ main {
       margin-top: 50px;
 
       .discription-text {
-        font-size: large;
+        font-size: medium;
         width: 80%;
         text-align: center;
       }
