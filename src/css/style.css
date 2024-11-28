@@ -1,65 +1,9 @@
-body {
-  margin: 0;
-  width: 100%;
-  height: 1440px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100px;
-  box-shadow: 1px 1px 7px 0px silver;
-}
-
-/* РєРѕРЅС‚РµР№РЅРµСЂ Р“РґРµ РІСЃРµ РЅР°С…РѕРґРёС‚СЃСЏ */
-.container {
-  width: 90%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  /* Р›РѕРіРѕС‚РёРї */
-  .logo {
-    display: flex;
-    align-items: center;
-    font-family: "Heebo";
-    font-size: x-large;
-  }
-
-  /* РќР°РІРёРіР°С†РёСЏ */
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-
-    li {
-      font-family: "Heebo";
-      list-style: none;
-    }
-  }
-
-  /* Р±РѕРєРѕРІС‹Рµ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹ */
-  .toolbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 20px;
-  }
-}
-
-/* РјР°Р№РЅ РіРґРµ РЅР°С…РѕРґСЏС‚СЃСЏ РєР°С‚РµРіРѕСЂРёРё */
 main {
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
+  margin-top: 150px;
 
   .main-box {
     width: 90%;
@@ -135,7 +79,6 @@ main {
   }
 }
 
-/* С‚СѓС‚ РЅР°С…РѕРґРёС‚СЃСЏ С‚РµРєСЃС‚ СЃ РѕРїРёСЃР°РЅРёРµРј РїСЂРѕРґСѓРєС†РёРё */
 .discription {
   width: 100%;
   height: auto;
@@ -169,7 +112,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 100px;
+  margin-top: 50px;
 
   .shop-text {
     font-family: "Heebo";
@@ -178,21 +121,58 @@ main {
   }
 
   .shop-box {
-    width: 70%;
-    height: auto;
+    width: 100%;
+    height: 530px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 0;
+    margin-top: 50px;
 
-    .squarte {
-      background-color: aqua;
+    .square-image {
+      width: 90%;
+      max-height: 530px;
+    }
+
+    .square {
       width: 90%;
       max-height: 450px;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
 
 .image {
-  height: 450px;
+  height: auto;
   width: auto;
+  box-shadow: 0px 0px 1px 1px gainsboro;
+}
+
+.square-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: rgb(200, 253, 255);
+  width: 80%;
+  height: 50px;
+  font-size: smaller;
+  margin-top: 25px;
+}
+
+.square-text {
+  font-family: "Heebo";
+  font-weight: normal;
+  font-size: medium;
+}
+
+.square-discription {
+  font-family: "Heebo";
+  margin-top: 50px;
+}
+
+.main-shop {
+  width: 80%;
+  height: auto;
+  display: grid;
 }
