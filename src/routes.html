@@ -10,11 +10,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
-  <body class="bg-stone-200 pl-10">
-    <p class="text-3xl font-bold pt-5">
+  <body class="bg-stone-200 pl-10 pr-10 pt-5">
+    <p class="text-3xl font-bold">
       5 увлекательных пеших маршрутов в Алматы с картами
     </p>
-    <div class="text-xl pt-5">
+    <div class="text-xl mt-5">
       В этом путеводителе собраны описания популярных походов в окрестностях
       Алматы. Близость Алматы к горам Северного Тянь-Шаня позволяет за один день
       совершать увлекательные путешествия в красивые места, через разные
@@ -25,115 +25,127 @@
       планировании любого похода учитывайте сезонность и погоду, подбирайте
       одежду соответственно выбранному маршруту.
     </div>
-    <div class="flex">
-      <img class="flex-none w-64 pt-5" src="images/baopic.jpeg" alt="" />
-      <div class="pt-3">
-        <p class="text-xl font-bold px-6 ">Поход до БАО</p>
-        <div class="px-6 pt-2">
-          <i class="fa-regular fa-map fa-lg"></i>
-          <span class="text-green-600 font-bold text-xl">простой</span>
-        </div>
-        <div class="px-6 pt-2">
-          <i class="fa-regular fa-clock fa-lg"></i>
-          <span class="text-black font-bold text-lg pl-1">4-5 часов</span>
-          <i class="fa-solid fa-tree fa-lg px-5 pr-1"></i>
-          <span class="text-black font-bold text-lg">20 км</span>
-        </div>
-        <div class="px-7 pt-2">
-          <i class="fa-solid fa-location-dot fa-lg"></i>
-          <a
-            href="https://maps.app.goo.gl/Bgizy4wPCBhSJpJH6"
-            class="text-blue-500 text-xl px-1"
-            >Узнать маршрут...</a>
-        </div>
-        <div class="px-7 text-xl pt-3">
-          Большое Алматинское озеро (БАО) — одно из самых известных природных
-          достопримечательностей недалеко от Алматы. Расположенное на высоте
-          2511 метров над уровнем моря, озеро привлекает туристов своими
-          невероятно красивыми видами и живописным окружением.
-        </div>
-      </div>
-    </div>
-    <div class="flex">
-      <img class="flex-none w-64 pt-5" src="images/shym.jpeg" alt="" />
-      <div class="pt-3">
-        <p class="text-xl font-bold px-6 ">Поход до г/к Шымбулак</p>
-        <div class="px-6 pt-2">
-          <i class="fa-regular fa-map fa-lg"></i>
-          <span class="text-green-600 font-bold text-xl">простой</span>
-        </div>
-        <div class="px-6 pt-2">
-          <i class="fa-regular fa-clock fa-lg"></i>
-          <span class="text-black font-bold text-lg pl-1">2 часа</span>
-          <i class="fa-solid fa-tree fa-lg px-5 pr-1"></i>
-          <span class="text-black font-bold text-lg">6.5 км</span>
-        </div>
-        <div class="px-7 pt-2">
-          <i class="fa-solid fa-location-dot fa-lg"></i>
-          <a
-            href="https://maps.app.goo.gl/igCnoJQhB2gXTE9w9"
-            class="text-blue-500 text-xl px-1"
-            >Узнать маршрут...</a>
-        </div>
-        <div class="px-7 text-xl pt-3">
-          Шымбулак — крупнейший горнолыжный курорт Казахстана, расположенный в Заилийском Алатау на высоте 2200 метров,
-          всего в 25 км от Алматы. Курорт популярен зимой для катания на лыжах и сноуборде, а летом — для хайкинга,
-          велопрогулок и наслаждения горными пейзажами. На территории доступны современные трассы разного уровня сложности,
-          канатная дорога, отели, рестораны и зоны отдыха.
+
+    <!-- Карточки с маршрутами -->
+    <div class="mt-8 space-y-10">
+      <!-- Маршрут 1 -->
+      <div class="flex bg-stone-100 shadow-md rounded-lg overflow-hidden mt-5">
+        <img class="flex-none w-64" src="images/baopic.jpeg" alt="БАО" />
+        <div class="p-5">
+          <p class="text-xl font-bold">Поход до БАО</p>
+          <div class="mt-2 flex items-center space-x-4">
+            <i class="fa-regular fa-map fa-lg"></i>
+            <span class="text-green-600 font-bold text-xl">Простой</span>
+          </div>
+          <div class="mt-2 flex items-center space-x-4">
+            <i class="fa-regular fa-clock fa-lg"></i>
+            <span class="text-black font-bold text-lg">4-5 часов</span>
+            <i class="fa-solid fa-tree fa-lg"></i>
+            <span class="text-black font-bold text-lg">20 км</span>
+          </div>
+          <div class="mt-2">
+            <i class="fa-solid fa-location-dot fa-lg"></i>
+            <a
+              href="https://maps.app.goo.gl/Bgizy4wPCBhSJpJH6"
+              class="text-blue-500 text-xl underline"
+              >Узнать маршрут...</a>
+          </div>
+          <p class="text-xl text-gray-700 mt-4">
+            Большое Алматинское озеро (БАО) — одно из самых известных природных
+            достопримечательностей недалеко от Алматы. Расположенное на высоте
+            2511 метров над уровнем моря, озеро привлекает туристов своими
+            невероятно красивыми видами и живописным окружением.
+          </p>
         </div>
       </div>
-    </div>
-    <div class="flex">
-      <img class="flex-none w-64 pt-5" src="images/фурманова.jpeg" alt="" />
-      <div class="pt-3">
-        <p class="text-xl font-bold px-6 ">Поход до пика Фурманова</p>
-        <div class="px-6 pt-2">
-          <i class="fa-regular fa-map fa-lg"></i>
-          <span class="text-orange-600 font-bold text-xl">средний</span>
-        </div>
-        <div class="px-6 pt-2">
-          <i class="fa-regular fa-clock fa-lg"></i>
-          <span class="text-black font-bold text-lg pl-1">2 часа</span>
-          <i class="fa-solid fa-tree fa-lg px-5 pr-1"></i>
-          <span class="text-black font-bold text-lg">6.5 км</span>
-        </div>
-        <div class="px-7 pt-2">
-          <i class="fa-solid fa-location-dot fa-lg"></i>
-          <a
-            href="https://2gis.ru/almaty/directions/tab/pedestrian/points/77.059%2C43.1575%3B9429940000797844%7C77.1165%2C43.1495%3B70030076329638130"
-            class="text-blue-500 text-xl px-1"
-            >Узнать маршрут...</a>
-        </div>
-        <div class="px-7 text-xl pt-3">
-          Пик Фурманова — один из популярных туристических маршрутов в окрестностях Алматы, расположенный в Заилийском Алатау. 
-          Этот маршрут известен своей доступностью и живописными видами, что делает его отличным выбором для начинающих любителей хайкинга.
+
+      <!-- Маршрут 2 -->
+      <div class="flex bg-stone-100 shadow-md rounded-lg overflow-hidden mt-5">
+        <img class="flex-none w-64" src="images/shym.jpeg" alt="Шымбулак" />
+        <div class="p-5">
+          <p class="text-xl font-bold">Поход до г/к Шымбулак</p>
+          <div class="mt-2 flex items-center space-x-4">
+            <i class="fa-regular fa-map fa-lg"></i>
+            <span class="text-green-600 font-bold text-xl">Простой</span>
+          </div>
+          <div class="mt-2 flex items-center space-x-4">
+            <i class="fa-regular fa-clock fa-lg"></i>
+            <span class="text-black font-bold text-lg">2 часа</span>
+            <i class="fa-solid fa-tree fa-lg"></i>
+            <span class="text-black font-bold text-lg">6.5 км</span>
+          </div>
+          <div class="mt-2">
+            <i class="fa-solid fa-location-dot fa-lg"></i>
+            <a
+              href="https://maps.app.goo.gl/igCnoJQhB2gXTE9w9"
+              class="text-blue-500 text-xl underline"
+              >Узнать маршрут...</a>
+          </div>
+          <p class="text-xl text-gray-700 mt-4">
+            Шымбулак — крупнейший горнолыжный курорт Казахстана, расположенный в
+            Заилийском Алатау на высоте 2200 метров. Это место популярно как
+            зимой, так и летом, предлагая трассы, канатные дороги и живописные
+            виды.
+          </p>
         </div>
       </div>
-    </div>
-    <div class="flex">
-      <img class="flex-none w-64 pt-5" src="images/тургень.jpeg" alt="" />
-      <div class="pt-3">
-        <p class="text-xl font-bold px-6 ">Поход до Тургеньского ущелья</p>
-        <div class="px-6 pt-2">
-          <i class="fa-regular fa-map fa-lg"></i>
-          <span class="text-red-600 font-bold text-xl">трудный</span>
+
+      <!-- Маршрут 3 -->
+      <div class="flex bg-stone-100 shadow-md rounded-lg overflow-hidden mt-5">
+        <img class="flex-none w-64" src="images/фурманова.jpeg" alt="Пик Фурманова" />
+        <div class="p-5">
+          <p class="text-xl font-bold">Поход до пика Фурманова</p>
+          <div class="mt-2 flex items-center space-x-4">
+            <i class="fa-regular fa-map fa-lg"></i>
+            <span class="text-orange-600 font-bold text-xl">Средний</span>
+          </div>
+          <div class="mt-2 flex items-center space-x-4">
+            <i class="fa-regular fa-clock fa-lg"></i>
+            <span class="text-black font-bold text-lg">5 часов</span>
+            <i class="fa-solid fa-tree fa-lg"></i>
+            <span class="text-black font-bold text-lg">12 км</span>
+          </div>
+          <div class="mt-2">
+            <i class="fa-solid fa-location-dot fa-lg"></i>
+            <a
+              href="https://2gis.ru/almaty/directions/tab/pedestrian/points/77.059%2C43.1575%3B9429940000797844%7C77.1165%2C43.1495%3B70030076329638130"
+              class="text-blue-500 text-xl underline"
+              >Узнать маршрут...</a>
+          </div>
+          <p class="text-xl text-gray-700 mt-4">
+            Пик Фурманова — один из самых популярных маршрутов в Заилийском
+            Алатау. Это прекрасное место для начинающих хайкеров с великолепными
+            видами.
+          </p>
         </div>
-        <div class="px-6 pt-2">
-          <i class="fa-regular fa-clock fa-lg"></i>
-          <span class="text-black font-bold text-lg pl-1">6.5-7 часов</span>
-          <i class="fa-solid fa-tree fa-lg px-5 pr-1"></i>
-          <span class="text-black font-bold text-lg">25 км</span>
-        </div>
-        <div class="px-7 pt-2">
-          <i class="fa-solid fa-location-dot fa-lg"></i>
-          <a
-            href="https://maps.app.goo.gl/35HzTZUccwJpRPAz7"
-            class="text-blue-500 text-xl px-1"
-            >Узнать маршрут...</a>
-        </div>
-        <div class="px-7 text-xl pt-3">
-          Тургеньское ущелье — одно из самых красивых и доступных мест для отдыха в окрестностях Алматы. 
-          Оно находится в 90 км от города и известно своими водопадами, альпийскими лугами, густыми хвойными лесами и историческими местами.
+      </div>
+
+      <!-- Маршрут 4 -->
+      <div class="flex bg-stone-100 shadow-md rounded-lg overflow-hidden mt-5">
+        <img class="flex-none w-64" src="images/тургень.jpeg" alt="Тургеньское ущелье" />
+        <div class="p-5">
+          <p class="text-xl font-bold">Поход до Тургеньского ущелья</p>
+          <div class="mt-2 flex items-center space-x-4">
+            <i class="fa-regular fa-map fa-lg"></i>
+            <span class="text-red-600 font-bold text-xl">Трудный</span>
+          </div>
+          <div class="mt-2 flex items-center space-x-4">
+            <i class="fa-regular fa-clock fa-lg"></i>
+            <span class="text-black font-bold text-lg">6.5-7 часов</span>
+            <i class="fa-solid fa-tree fa-lg"></i>
+            <span class="text-black font-bold text-lg">25 км</span>
+          </div>
+          <div class="mt-2">
+            <i class="fa-solid fa-location-dot fa-lg"></i>
+            <a
+              href="https://maps.app.goo.gl/35HzTZUccwJpRPAz7"
+              class="text-blue-500 text-xl underline"
+              >Узнать маршрут...</a>
+          </div>
+          <p class="text-xl text-gray-700 mt-4">
+            Тургеньское ущелье — это великолепный горный маршрут с водопадами,
+            лугами и густыми лесами, находящийся всего в 90 км от Алматы.
+          </p>
         </div>
       </div>
     </div>
