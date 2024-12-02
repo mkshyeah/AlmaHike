@@ -9,6 +9,177 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e7e5e4;
+      }
+
+      .bg-stone-200 {
+        background-color: #e7e5e4;
+      }
+
+      .pl-10 {
+        padding-left: 2.5rem;
+      }
+
+      .pr-10 {
+        padding-right: 2.5rem;
+      }
+
+      .pt-5 {
+        padding-top: 1.25rem;
+      }
+
+      .text-3xl {
+        font-size: 2rem;
+      }
+
+      .font-bold {
+        font-weight: bold;
+      }
+
+      .text-xl {
+        font-size: 1.25rem;
+      }
+
+      .mt-5 {
+        margin-top: 1.25rem;
+      }
+
+      .mt-8 {
+        margin-top: 2rem;
+      }
+
+      .space-y-10 > * + * {
+        margin-top: 2.5rem;
+      }
+
+      .flex {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .bg-stone-100 {
+        background-color: #f5f5f4;
+      }
+
+      .shadow-md {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+
+      .overflow-hidden {
+        overflow: hidden;
+      }
+
+      .flex-none {
+        flex: none;
+      }
+
+      .w-64 {
+        width: 16rem;
+      }
+
+      .p-5 {
+        padding: 1.25rem;
+      }
+
+      .text-green-600 {
+        color: #059669;
+      }
+
+      .text-orange-600 {
+        color: #ea580c;
+      }
+
+      .text-red-600 {
+        color: #dc2626;
+      }
+
+      .text-gray-700 {
+        color: #4b5563;
+      }
+
+      .text-blue-500 {
+        color: #3b82f6;
+      }
+
+      .underline {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 1024px) {
+        /* На планшетах уменьшаем отступы */
+        .pl-10,
+        .pr-10 {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+
+        .text-3xl {
+          font-size: 1.75rem;
+        }
+
+        .text-xl {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        /* На мобильных устройствах выстраиваем карточки вертикально */
+        .flex {
+          flex-direction: column;
+        }
+
+        .w-64 {
+          width: 100%; /* Изображение растягивается на всю ширину */
+          height: auto; /* Сохраняем пропорции */
+        }
+
+        .p-5 {
+          padding: 1rem;
+        }
+
+        .text-3xl {
+          font-size: 1.5rem;
+        }
+
+        .text-xl {
+          font-size: 0.875rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        /* На очень маленьких экранах дополнительно уменьшаем отступы */
+        .pl-10,
+        .pr-10 {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .pt-5 {
+          padding-top: 1rem;
+        }
+
+        .text-3xl {
+          font-size: 1.25rem;
+        }
+
+        .text-xl {
+          font-size: 0.75rem;
+        }
+
+        .p-5 {
+          padding: 0.75rem;
+        }
+      }
+    </style>
   </head>
   <body class="bg-stone-200 pl-10 pr-10 pt-5">
     <p class="text-3xl font-bold">
