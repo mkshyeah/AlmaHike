@@ -159,6 +159,11 @@ main {
     padding: 0 0.5rem;
   }
 }
+@media (max-width: 420px) {
+  .wrapper {
+    width: 400px;
+  }
+}
 
 .shop {
   display: grid;
@@ -313,6 +318,21 @@ main {
     flex-direction: column;
     height: auto;
     width: 330px;
+    gap: 10px;
+  }
+  .shop-banner {
+    width: 100%;
+  }
+  .shop-info {
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .shop-card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 250px;
     gap: 10px;
   }
   .shop-banner {
