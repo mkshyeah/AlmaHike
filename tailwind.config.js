@@ -12,6 +12,9 @@ module.exports = {
         lg: "1028px",
         xl: "1440px",
       },
+      width: {
+        video: "900px",
+      },
     },
   },
   plugins: [],
