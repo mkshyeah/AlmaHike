@@ -89,6 +89,7 @@ main {
       position: relative;
       width: 350px;
       margin: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
       border-radius: 2%;
       margin-top: 50px;
@@ -136,6 +137,10 @@ main {
         }
       }
     }
+    .card:hover {
+      transform: translateY(-10px) scale(1.01);
+      box-shadow: 0 0 10px 0px #dad3d3;
+    }
   }
 }
 
@@ -151,7 +156,7 @@ main {
 }
 @media (max-width: 768px) {
   .wrapper {
-    padding: 0 0.5rem; /* Уменьшаем отступы на маленьких экранах */
+    padding: 0 0.5rem;
   }
 }
 
@@ -174,7 +179,7 @@ main {
   flex-wrap: nowrap;
   justify-content: space-between;
   margin: 0 auto;
-  box-shadow: 0px 2px 10px lightgray;
+  box-shadow: 0 0 10px 0px #dad3d3;
   border-radius: 2%;
 
   gap: 50px;
@@ -207,7 +212,8 @@ main {
 }
 .shop-button:hover {
   background: #dad3d3;
-  box-shadow: 0 0 5px 0px #dad3d3;
+  box-shadow: 0 0 10px 0px #dad3d3;
+  transform: translateY(-10px) scale(1.01);
 }
 
 .shop-container-1 {
@@ -306,7 +312,7 @@ main {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 250px;
+    width: 330px;
     gap: 10px;
   }
   .shop-banner {
