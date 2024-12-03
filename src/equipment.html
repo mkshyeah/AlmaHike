@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=<>, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <title>AlmaHike.shop</title>
     <link href="./css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/index.css" />
     <link href="output.css" rel="stylesheet" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap");
-    </style>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
     </style>
@@ -67,262 +67,183 @@
 
     <main>
       <section class="main-box">
-        <h1>Основные категории</h1>
-        <div class="discription">
-          <div class="discription-text">
-            Наша продукция – это сочетание уникальности, качества и
-            инновационного подхода. Каждое изделие создано с заботой о деталях и
-            потребностях клиента. Мы используем только первоклассные материалы,
-            которые гарантируют долговечность и комфорт. Особое внимание уделено
-            экологичности и безопасности, чтобы наши товары соответствовали
-            самым высоким стандартам. Уникальный дизайн и функциональность
-            делают нашу продукцию незаменимой в повседневной жизни. Мы гордимся
-            тем, что каждый клиент получает не просто товар, а решение,
-            созданное специально для него. Выбирая нас, вы выбираете качество,
-            надежность и стиль, который всегда актуален.
+        <div class="catalog-title">
+          <h1>Основные категории</h1>
+        </div>
+      </section>
+
+      <section class="discription">
+        <div class="discription-text">
+          Наша продукция – это сочетание уникальности, качества и инновационного
+          подхода. Каждое изделие создано с заботой о деталях и потребностях
+          клиента. Мы используем только первоклассные материалы, которые
+          гарантируют долговечность и комфорт. Особое внимание уделено
+          экологичности и безопасности, чтобы наши товары соответствовали самым
+          высоким стандартам. Уникальный дизайн и функциональность делают нашу
+          продукцию незаменимой в повседневной жизни. Мы гордимся тем, что
+          каждый клиент получает не просто товар, а решение, созданное
+          специально для него. Выбирая нас, вы выбираете качество, надежность и
+          стиль, который всегда актуален.
+        </div>
+      </section>
+      <section class="category">
+        <!-- Содержит все три карточки -->
+        <div class="wrapper">
+          <!-- Главная часть карточки -->
+          <div class="card">
+            <!-- Содержит изображение карточки и категорию -->
+            <div class="card-banner">
+              <p class="category-tag mountain-jackets">Горный верх</p>
+              <img
+                class="banner-img"
+                src="images/куртка.webp"
+                alt="mountain jackets"
+              />
+            </div>
+
+            <!-- Содержит информацию карточки -->
+            <div class="card-info">
+              <div class="button"><a href="#jacket">перейти</a></div>
+            </div>
           </div>
         </div>
 
-        <div class="rectangle-box">
-          <div class="rectangle">
-            <img
-              src="images/куртка.webp"
-              alt="Горные куртки"
-              style="border-radius: 10px 10px 0px 0px"
-              width="348px"
-            />
-            <div class="text-card">
-              <div class="text-box">Горный верх</div>
-              <div class="button-box"><a href="#jacket">Перейти</a></div>
+        <!-- Содержит все три карточки -->
+        <div class="wrapper">
+          <!-- Главная часть карточки -->
+          <div class="card">
+            <!-- Содержит изображение карточки и категорию -->
+            <div class="card-banner">
+              <p class="category-tag mountain-jackets">Горный низ</p>
+              <img
+                class="banner-img"
+                src="images/штаны.webp"
+                alt="mountain jackets"
+              />
+            </div>
+
+            <!-- Содержит информацию карточки -->
+            <div class="card-info">
+              <div class="button"><a href="#jeans">перейти</a></div>
             </div>
           </div>
-          <div class="rectangle">
-            <img
-              src="images/штаны.webp"
-              alt="Горные куртки"
-              style="border-radius: 10px 10px 0px 0px"
-              width="348px"
-            />
+        </div>
 
-            <div class="text-card">
-              <div class="text-box">Горный низ</div>
-              <div class="button-box"><a href="#jeans">Перейти</a></div>
+        <!-- Содержит все три карточки -->
+        <div class="wrapper">
+          <!-- Главная часть карточки -->
+          <div class="card">
+            <!-- Содержит изображение карточки и категорию -->
+            <div class="card-banner">
+              <p class="category-tag mountain-jackets">
+                Дополнителньное <br />снаряжение
+              </p>
+              <img
+                class="banner-img"
+                src="images/снаряжение.webp"
+                alt="mountain jackets"
+              />
             </div>
-          </div>
 
-          <div class="rectangle">
-            <img
-              src="images/снаряжение.webp"
-              alt="Горные куртки"
-              style="border-radius: 10px 10px 0px 0px"
-              width="348px"
-            />
-
-            <div class="text-card">
-              <div class="text-box">Снаряжение</div>
-              <div class="button-box"><a href="#staff">Перейти</a></div>
+            <!-- Содержит информацию карточки -->
+            <div class="card-info">
+              <div class="button"><a href="#staff">перейти</a></div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="shop">
-        <h2 id="jacket">верхняя одежда</h2>
-        <div class="main-shop">
-          <div class="shop-box">
-            <div class="image">
+        <div class="shop-container-1"><h2 id="jacket">верхняя одежда</h2></div>
+        <div class="shop-container-2">
+          <!-- Главная часть карточки магазина -->
+          <div class="shop-card">
+            <!-- Содержит изображение карточки и категорию  магазина-->
+            <div class="shop-banner">
               <img
+                class="shop-img"
                 src="images/Superdry Men's Mountain Windcheater Jacket.jpeg"
-                alt="Пример Курток"
-                height="450"
-                width="100%"
+                alt="Men's jacket"
               />
             </div>
 
-            <div class="shop-status">
-              <div class="shop-rate">
-                <div class="shop-text">
-                  Высококачественная/<br />Водонепроницаемая куртка
-                </div>
-                <div class="shop-button">
-                  <a
-                    href="https://trekkingshop.kz/?srsltid=AfmBOorPeCMMD4D20Iqmx3GbWw_K1-28Dj8loFt7OQ83Woz7tlJwzlEg"
-                    >Купить</a
-                  >
-                </div>
+            <!-- Содержит информацию карточки магазина -->
+            <div class="shop-info">
+              <p>Высококачественная/<br />Водонепроницаемая куртка</p>
+              <div class="shop-button">
+                <a href="https://limpopo.kz/odezhda-all/gornolyzhnaya-odezhda/"
+                  >купить</a
+                >
               </div>
-
-              <div class="square-discription">
+              <p>
                 <strong> Ткань: </strong> 97% переработанный полиэстер / 3%
                 эластан
                 <br />
                 <strong>Рейтинг UPF:</strong> 50
-              </div>
-            </div>
-          </div>
-          <div class="shop-box">
-            <div class="image">
-              <img
-                src="images/Superdry Men's Mountain Windcheater Jacket.jpeg"
-                alt="Пример Курток"
-                height="450"
-                width="100%"
-              />
-            </div>
-
-            <div class="shop-status">
-              <div class="shop-rate">
-                <div class="shop-text">
-                  Высококачественная/<br />Водонепроницаемая куртка
-                </div>
-                <div class="shop-button">
-                  <a
-                    href="https://trekkingshop.kz/?srsltid=AfmBOorPeCMMD4D20Iqmx3GbWw_K1-28Dj8loFt7OQ83Woz7tlJwzlEg"
-                    >Купить</a
-                  >
-                </div>
-              </div>
-
-              <div class="square-discription">
-                <strong> Ткань: </strong> 97% переработанный полиэстер / 3%
-                эластан
-                <br />
-                <strong>Рейтинг UPF:</strong> 50
-              </div>
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <section class="shop">
-        <h2 id="jeans">нижняя одежда</h2>
-        <div class="main-shop">
-          <div class="shop-box">
-            <div class="image">
+
+        <div class="shop-container-3"><h2 id="jeans">нижняя одежда</h2></div>
+
+        <div class="shop-container-4">
+          <!-- Главная часть карточки магазина -->
+          <div class="shop-card">
+            <!-- Содержит изображение карточки и категорию  магазина-->
+            <div class="shop-banner">
               <img
-                src="images/shopping (6).webp"
-                alt="Пример Курток"
-                height="450"
-                width="100%"
+                class="shop-img"
+                src="images/комбез.webp"
+                alt="Men's jacket"
               />
             </div>
 
-            <div class="shop-status">
-              <div class="shop-rate">
-                <div class="shop-text">
-                  Высококачественные/<br />Водонепроницаемые штаны
-                </div>
-                <div class="shop-button">
-                  <a
-                    href="https://trekkingshop.kz/?srsltid=AfmBOorPeCMMD4D20Iqmx3GbWw_K1-28Dj8loFt7OQ83Woz7tlJwzlEg"
-                    >Купить</a
-                  >
-                </div>
+            <!-- Содержит информацию карточки магазина -->
+            <div class="shop-info">
+              <p>Высококачественная/<br />Водонепроницаемая куртка</p>
+              <div class="shop-button">
+                <a href="https://limpopo.kz/odezhda-all/gornolyzhnaya-odezhda/"
+                  >купить</a
+                >
               </div>
-
-              <div class="square-discription">
+              <p>
                 <strong> Ткань: </strong> 97% переработанный полиэстер / 3%
                 эластан
                 <br />
                 <strong>Рейтинг UPF:</strong> 50
-              </div>
-            </div>
-          </div>
-          <div class="shop-box">
-            <div class="image">
-              <img
-                src="images/shopping (6).webp"
-                alt="Пример Курток"
-                height="450"
-                width="100%"
-              />
-            </div>
-
-            <div class="shop-status">
-              <div class="shop-rate">
-                <div class="shop-text">
-                  Высококачественная/<br />Водонепроницаемая обувь
-                </div>
-                <div class="shop-button">
-                  <a
-                    href="https://trekkingshop.kz/?srsltid=AfmBOorPeCMMD4D20Iqmx3GbWw_K1-28Dj8loFt7OQ83Woz7tlJwzlEg"
-                    >Купить</a
-                  >
-                </div>
-              </div>
-
-              <div class="square-discription">
-                <strong> Ткань: </strong> 97% переработанный полиэстер / 3%
-                эластан
-                <br />
-                <strong>Рейтинг UPF:</strong> 50
-              </div>
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <section class="shop">
-        <h2 id="staff">Снаряжение</h2>
-        <div class="main-shop">
-          <div class="shop-box">
-            <div class="image">
+        <div class="shop-container-5"><h2 id="staff">снаряжение</h2></div>
+        <div class="shop-container-6">
+          <!-- Главная часть карточки магазина -->
+          <div class="shop-card">
+            <!-- Содержит изображение карточки и категорию  магазина-->
+            <div class="shop-banner">
               <img
-                src="images/shopping (8).webp"
-                alt="Пример Курток"
-                height="450"
-                width="100%"
+                class="shop-img"
+                src="images/палатка2.jpg"
+                alt="Men's jacket"
               />
             </div>
 
-            <div class="shop-status">
-              <div class="shop-rate">
-                <div class="shop-text">
-                  Высококачественное/<br />Водонепроницаемое снаряжение
-                </div>
-                <div class="shop-button">
-                  <a
-                    href="https://trekkingshop.kz/?srsltid=AfmBOorPeCMMD4D20Iqmx3GbWw_K1-28Dj8loFt7OQ83Woz7tlJwzlEg"
-                    >Купить</a
-                  >
-                </div>
+            <!-- Содержит информацию карточки магазина -->
+            <div class="shop-info">
+              <p>Высококачественная/<br />Водонепроницаемая куртка</p>
+              <div class="shop-button">
+                <a
+                  href="https://sportmaster.kz/ru/catalog/gornolyzhnaya_odezhda_/"
+                  >купить</a
+                >
               </div>
-
-              <div class="square-discription">
+              <p>
                 <strong> Ткань: </strong> 97% переработанный полиэстер / 3%
                 эластан
                 <br />
                 <strong>Рейтинг UPF:</strong> 50
-              </div>
-            </div>
-          </div>
-          <div class="shop-box">
-            <div class="image">
-              <img
-                src="images/shopping (8).webp"
-                alt="Пример Курток"
-                height="450"
-                width="100%"
-              />
-            </div>
-
-            <div class="shop-status">
-              <div class="shop-rate">
-                <div class="shop-text">
-                  Высококачественное/<br />Водонепроницаемое снаряжение
-                </div>
-                <div class="shop-button">
-                  <a
-                    href="https://trekkingshop.kz/?srsltid=AfmBOorPeCMMD4D20Iqmx3GbWw_K1-28Dj8loFt7OQ83Woz7tlJwzlEg"
-                    >Купить</a
-                  >
-                </div>
-              </div>
-
-              <div class="square-discription">
-                <strong> Ткань: </strong> 97% переработанный полиэстер / 3%
-                эластан
-                <br />
-                <strong>Рейтинг UPF:</strong> 50
-              </div>
+              </p>
             </div>
           </div>
         </div>
