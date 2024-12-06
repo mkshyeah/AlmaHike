@@ -125,3 +125,21 @@ td {
     opacity: 1;
   }
 }
+
+/* Скрытие хедера */
+.navbar-hidden {
+  transform: translateY(-100%);
+}
+
+.navbar-visible {
+  transform: translateY(0);
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  transition: transform 0.3s ease-in-out;
+}

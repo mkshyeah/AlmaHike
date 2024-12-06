@@ -1,19 +1,21 @@
-// Находим элемент навигации
+// Находим элемент хедера
 const navbar = document.getElementById("navbar");
 
 // Отслеживание последней позиции прокрутки
 let lastScrollY = window.scrollY;
 
-// Добавляем событие scroll
+// Добавляем событие прокрутки
 window.addEventListener("scroll", () => {
   if (window.scrollY > lastScrollY) {
-    // Если прокручиваем вниз, скрываем навигацию
-    navbar.classList.add("-translate-y-full");
+    // Прокрутка вниз - скрываем хедер
+    navbar.classList.remove("navbar-visible");
+    navbar.classList.add("navbar-hidden");
   } else {
-    // Если прокручиваем вверх, показываем навигацию
-    navbar.classList.remove("-translate-y-full");
+    // Прокрутка вверх - показываем хедер
+    navbar.classList.remove("navbar-hidden");
+    navbar.classList.add("navbar-visible");
   }
-  lastScrollY = window.scrollY; // Обновляем последнюю позицию прокрутки
+  lastScrollY = window.scrollY; // Обновляем позицию прокрутки
 });
 
 //
