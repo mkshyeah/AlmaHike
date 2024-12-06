@@ -4,20 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>5 хайкинговых маршрутов в Алматы</title>
-    <link rel="stylesheet" href="/src/output.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/routes.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/index.css" />
-    
+    <link href="output.css" rel="stylesheet" />
     <style>
       body {
-        font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
         background-color: #e7e5e4;
-        padding-top: 64px; /* Отступ для учёта высоты шапки */
       }
 
       .bg-stone-200 {
@@ -60,10 +63,10 @@
         margin-top: 2.5rem;
       }
 
-      .flex {
+      /* .flex {
         display: flex;
         gap: 1rem;
-      }
+      } */
 
       .bg-stone-100 {
         background-color: #f5f5f4;
@@ -136,9 +139,9 @@
 
       @media (max-width: 768px) {
         /* На мобильных устройствах выстраиваем карточки вертикально */
-        .flex {
+        /* .flex {
           flex-direction: column;
-        }
+        } */
 
         .w-64 {
           width: 100%; /* Изображение растягивается на всю ширину */
@@ -182,259 +185,276 @@
           padding: 0.75rem;
         }
       }
-    
-
     </style>
-
-
-
-
   </head>
   <body>
     <header
       id="navbar"
-      class="bg-stone-100 shadow-md fixed w-full top-0 z-10 transform transition-transform duration-300"
+      class="bg-white shadow-md fixed top-0 w-full z-50 transform transition-transform duration-300"
     >
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4">
+        <div class="flex justify-around items-center py-4">
           <!-- Логотип -->
-          <a href="#" class="text-2xl font-bold text-blue-600">
-            AlmaHike
-          </a>
-
-          <!--Навигация -->
-          <nav class="flex space-x-8 text-lg">
-            <a href="#about" class="text-gray-700 hover:text-blue-500 transition">
-              О нас
-            </a>
-            <a
-              href="#equipment"
-              class="text-gray-700 hover:text-blue-500 transition"
-            >
-              Экипировка
-            </a>
-            <a href="#routes" class="text-gray-700 hover:text-blue-500 transition">
-              Маршруты
-            </a>
-            <a href="#contact" class="text-gray-700 hover:text-blue-500 transition">
-              Контакты
-            </a>
+          <div>
+            <img src="/media/montain-icon.png" alt="icon" />
+            <a href="/" class="text-2xl font-bold text-blue-600">AlmaHike</a>
+          </div>
+          <!-- Навигация -->
+          <nav class="nav">
+            <ul>
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-gray-700 hover:text-blue-600"
+                  >О нас</a
+                >
+              </li>
+              <li>
+                <a
+                  href="equipment.html"
+                  class="text-gray-700 hover:text-blue-600"
+                  >Экипировка</a
+                >
+              </li>
+              <li>
+                <a href="routes.html" class="text-gray-700 hover:text-blue-600"
+                  >Маршруты</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
           </nav>
+          <!-- Бургер -->
+          <div class="burger">
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
 
-    <div class="pl-10 pr-10 pt-5">
+    <div class="main pl-10 pr-10 pt-5">
       <p class="text-3xl font-bold">
         5 увлекательных пеших маршрутов в Алматы с картами
       </p>
       <div class="text-xl mt-5">
         В этом путеводителе собраны описания популярных походов в окрестностях
-        Алматы. Близость Алматы к горам Северного Тянь-Шаня позволяет за один день
-        совершать увлекательные путешествия в красивые места, через разные
+        Алматы. Близость Алматы к горам Северного Тянь-Шаня позволяет за один
+        день совершать увлекательные путешествия в красивые места, через разные
         природные зоны. Мы подобрали наиболее живописные и доступные маршруты,
         которые позволят вам безопасно наслаждаться великолепием гор и
         разнообразием ландшафтов - от ледников до пустынь. Горные тропы в
-        большинстве случаев хорошо оборудованы и промаркированы. Тем не менее, при
-        планировании любого похода учитывайте сезонность и погоду, подбирайте
-        одежду соответственно выбранному маршруту.
+        большинстве случаев хорошо оборудованы и промаркированы. Тем не менее,
+        при планировании любого похода учитывайте сезонность и погоду,
+        подбирайте одежду соответственно выбранному маршруту.
       </div>
+
+      <!-- Карточки с маршрутами -->
       <div class="mt-8 space-y-10">
-        <!-- Маршрут 1 -->
-        <div class="flex bg-stone-100 shadow-md rounded-lg overflow-hidden mt-5">
-          <img class="flex-none w-64" src="images/baopic.jpeg" alt="БАО" />
-          <div class="p-5">
-            <p class="text-xl font-bold">Поход до БАО</p>
-            <div class="mt-2 flex items-center space-x-4">
-              <i class="fa-regular fa-map fa-lg"></i>
-              <span class="text-green-600 font-bold text-lg">Простой</span>
+        <div class="card">
+          <img class="card-image" src="images/baopic.jpeg" alt="БАО" />
+          <div class="card-content">
+            <p class="card-title">Поход до БАО</p>
+            <div class="card-meta">
+              <i class="fa-regular fa-map"></i>
+              <span class="difficulty">Простой</span>
+              <i class="fa-regular fa-clock"></i>
+              <span class="time">4-5 часов</span>
+              <i class="fa-solid fa-tree"></i>
+              <span class="distance">20 км</span>
             </div>
-            <div class="mt-2 flex items-center space-x-4">
-              <i class="fa-regular fa-clock fa-lg"></i>
-              <span class="text-black font-bold text-lg ">4-5 часов</span>
-              <i class="fa-solid fa-tree fa-lg"></i>
-              <span class="text-black font-bold text-lg ">20 км</span>
-            </div>
-            <div class="mt-2">
-              <i class="fa-solid fa-location-dot fa-lg"></i>
+            <div class="card-route">
+              <i class="fa-solid fa-location-dot"></i>
               <a
                 href="https://maps.app.goo.gl/Bgizy4wPCBhSJpJH6"
-                class="text-blue-500 text-xl underline"
-                >Узнать маршрут...</a>
+                class="route-link"
+                >Узнать маршрут...</a
+              >
             </div>
-            <p class="text-xl text-gray-700 mt-4">
-              Большое Алматинское озеро (БАО) — одно из самых известных природных
-              достопримечательностей недалеко от Алматы. Расположенное на высоте
-              2511 метров над уровнем моря, озеро привлекает туристов своими
-              невероятно красивыми видами и живописным окружением.
+            <p class="card-description">
+              Большое Алматинское озеро (БАО) — одно из самых известных
+              природных достопримечательностей недалеко от Алматы. Расположенное
+              на высоте 2511 метров над уровнем моря, озеро привлекает туристов
+              своими невероятно красивыми видами и живописным окружением.
             </p>
           </div>
         </div>
-  
+
         <!-- Маршрут 2 -->
-        <div class="flex bg-stone-100 shadow-md rounded-lg overflow-hidden mt-5">
-          <img class="flex-none w-64" src="images/shym.jpeg" alt="Шымбулак" />
-          <div class="p-5">
-            <p class="text-xl font-bold">Поход до г/к Шымбулак</p>
-            <div class="mt-2 flex items-center space-x-4">
-              <i class="fa-regular fa-map fa-lg"></i>
-              <span class="text-green-600 font-bold text-lg">Простой</span>
+        <div class="card">
+          <img class="card-image" src="images/shym.jpeg" alt="Шымбулак" />
+          <div class="card-content">
+            <p class="card-title">Поход до г/к Шымбулак</p>
+            <div class="card-meta">
+              <i class="fa-regular fa-map"></i>
+              <span class="difficulty">Простой</span>
+              <i class="fa-regular fa-clock"></i>
+              <span class="time">2 часа</span>
+              <i class="fa-solid fa-tree"></i>
+              <span class="distance">6.5 км</span>
             </div>
-            <div class="mt-2 flex items-center space-x-4">
-              <i class="fa-regular fa-clock fa-lg"></i>
-              <span class="text-black font-bold text-lg">2 часа</span>
-              <i class="fa-solid fa-tree fa-lg"></i>
-              <span class="text-black font-bold text-lg">6.5 км</span>
-            </div>
-            <div class="mt-2">
-              <i class="fa-solid fa-location-dot fa-lg"></i>
+            <div class="card-route">
+              <i class="fa-solid fa-location-dot"></i>
               <a
                 href="https://maps.app.goo.gl/igCnoJQhB2gXTE9w9"
-                class="text-blue-500 text-xl underline"
-                >Узнать маршрут...</a>
+                class="route-link"
+                >Узнать маршрут...</a
+              >
             </div>
-            <p class="text-xl text-gray-700 mt-4">
-              Шымбулак — крупнейший горнолыжный курорт Казахстана, расположенный в
-              Заилийском Алатау на высоте 2200 метров. Это место популярно как
+            <p class="card-description">
+              Шымбулак — крупнейший горнолыжный курорт Казахстана, расположенный
+              в Заилийском Алатау на высоте 2200 метров. Это место популярно как
               зимой, так и летом, предлагая трассы, канатные дороги и живописные
               виды.
             </p>
           </div>
         </div>
-  
+
         <!-- Маршрут 3 -->
-        <div class="flex bg-stone-100 shadow-md rounded-lg overflow-hidden mt-5">
-          <img class="flex-none w-64" src="images/фурманова.jpeg" alt="Пик Фурманова" />
-          <div class="p-5">
-            <p class="text-xl font-bold">Поход до пика Фурманова</p>
-            <div class="mt-2 flex items-center space-x-4">
-              <i class="fa-regular fa-map fa-lg"></i>
-              <span class="text-orange-600 font-bold text-lg">Средний</span>
+        <div class="card">
+          <img
+            class="card-image"
+            src="images/фурманова.jpeg"
+            alt="Пик Фурманова"
+          />
+          <div class="card-content">
+            <p class="card-title">Поход до пика Фурманова</p>
+            <div class="card-meta">
+              <i class="fa-regular fa-map"></i>
+              <span class="difficulty">Средний</span>
+              <i class="fa-regular fa-clock"></i>
+              <span class="time">5 часов</span>
+              <i class="fa-solid fa-tree"></i>
+              <span class="distance">12 км</span>
             </div>
-            <div class="mt-2 flex items-center space-x-4">
-              <i class="fa-regular fa-clock fa-lg"></i>
-              <span class="text-black font-bold text-lg">5 часов</span>
-              <i class="fa-solid fa-tree fa-lg"></i>
-              <span class="text-black font-bold text-lg">12 км</span>
-            </div>
-            <div class="mt-2">
-              <i class="fa-solid fa-location-dot fa-lg"></i>
+            <div class="card-route">
+              <i class="fa-solid fa-location-dot"></i>
               <a
                 href="https://2gis.ru/almaty/directions/tab/pedestrian/points/77.059%2C43.1575%3B9429940000797844%7C77.1165%2C43.1495%3B70030076329638130"
-                class="text-blue-500 text-xl underline"
-                >Узнать маршрут...</a>
+                class="route-link"
+                >Узнать маршрут...</a
+              >
             </div>
-            <p class="text-xl text-gray-700 mt-4">
+            <p class="card-description">
               Пик Фурманова — один из самых популярных маршрутов в Заилийском
-              Алатау. Это прекрасное место для начинающих хайкеров с великолепными
-              видами.
+              Алатау. Это прекрасное место для начинающих хайкеров с
+              великолепными видами.
             </p>
           </div>
         </div>
-  
+
         <!-- Маршрут 4 -->
-        <div class="flex bg-stone-100 shadow-md rounded-lg overflow-hidden mt-5">
-          <img class="flex-none w-64" src="images/тургень.jpeg" alt="Тургеньское ущелье" />
-          <div class="p-5">
-            <p class="text-xl font-bold">Поход до Тургеньского ущелья</p>
-            <div class="mt-2 flex items-center space-x-4">
-              <i class="fa-regular fa-map fa-lg"></i>
-              <span class="text-red-600 font-bold text-lg">Трудный</span>
+        <div class="card">
+          <img
+            class="card-image"
+            src="images/тургень.jpeg"
+            alt="Тургеньское ущелье"
+          />
+          <div class="card-content">
+            <p class="card-title">Поход до Тургеньского ущелья</p>
+            <div class="card-meta">
+              <i class="fa-regular fa-map"></i>
+              <span class="difficulty">Трудный</span>
+              <i class="fa-regular fa-clock"></i>
+              <span class="time">6.5-7 часов</span>
+              <i class="fa-solid fa-tree"></i>
+              <span class="distance">25 км</span>
             </div>
-            <div class="mt-2 flex items-center space-x-4">
-              <i class="fa-regular fa-clock fa-lg"></i>
-              <span class="text-black font-bold text-lg">6.5-7 часов</span>
-              <i class="fa-solid fa-tree fa-lg"></i>
-              <span class="text-black font-bold text-lg">25 км</span>
-            </div>
-            <div class="mt-2">
-              <i class="fa-solid fa-location-dot fa-lg"></i>
+            <div class="card-route">
+              <i class="fa-solid fa-location-dot"></i>
               <a
                 href="https://maps.app.goo.gl/35HzTZUccwJpRPAz7"
-                class="text-blue-500 text-xl underline"
-                >Узнать маршрут...</a>
+                class="route-link"
+                >Узнать маршрут...</a
+              >
             </div>
-            <p class="text-xl text-gray-700 mt-4">
+            <p class="card-description">
               Тургеньское ущелье — это великолепный горный маршрут с водопадами,
               лугами и густыми лесами, находящийся всего в 90 км от Алматы.
             </p>
           </div>
         </div>
-  
-        <!--5 маршут-->      
-        <div class="flex bg-stone-100 shadow-md rounded-lg overflow-hidden mt-5">
-          <img class="flex-none w-64" src="images/Kok_Zhailau.jpeg" alt="Пик Фурманова" />
-          <div class="p-5">
-            <p class="text-xl font-bold">Поход до пика Кок Жайляу</p>
-            <div class="mt-2 flex items-center space-x-4">
-              <i class="fa-regular fa-map fa-lg"></i>
-              <span class="text-green-600 font-bold text-lg">Простой</span>
+
+        <!-- Маршрут 5 -->
+        <div class="card">
+          <img
+            class="card-image"
+            src="images/Kok_Zhailau.jpeg"
+            alt="Кок Жайляу"
+          />
+          <div class="card-content">
+            <p class="card-title">Поход до пика Кок Жайляу</p>
+            <div class="card-meta">
+              <i class="fa-regular fa-map"></i>
+              <span class="difficulty">Простой</span>
+              <i class="fa-regular fa-clock"></i>
+              <span class="time">2 часа</span>
+              <i class="fa-solid fa-tree"></i>
+              <span class="distance">5 км</span>
             </div>
-            <div class="mt-2 flex items-center space-x-4">
-              <i class="fa-regular fa-clock fa-lg"></i>
-              <span class="text-black font-bold text-lg">2 часов</span>
-              <i class="fa-solid fa-tree fa-lg"></i>
-              <span class="text-black font-bold text-lg">5 км</span>
-            </div>
-            <div class="mt-2">
-              <i class="fa-solid fa-location-dot fa-lg"></i>
+            <div class="card-route">
+              <i class="fa-solid fa-location-dot"></i>
               <a
                 href="https://maps.app.goo.gl/bPaNYThd6B8udgb77"
-                class="text-blue-500 text-xl underline"
-                >Узнать маршрут...</a>
+                class="route-link"
+                >Узнать маршрут...</a
+              >
             </div>
-            <p class="text-xl text-gray-700 mt-4">
-              Кок Жайляу — это одно из самых популярных мест для активного отдыха в окрестностях Алматы, Казахстан. 
-              Оно представляет собой живописное плато, 
-              расположенное в Заилийском Алатау на высоте около 2250 метров над уровнем моря.
+            <p class="card-description">
+              Кок Жайляу — это одно из самых популярных мест для активного
+              отдыха в окрестностях Алматы, Казахстан. Оно представляет собой
+              живописное плато, расположенное в Заилийском Алатау на высоте
+              около 2250 метров над уровнем моря.
             </p>
           </div>
         </div>
-        
       </div>
-      </div>
-      <!-- Contact Section -->
-       <div class="pt-5">
+    </div>
+    <!-- Contact Section -->
+    <div class="pt-5">
       <section
-      id="contact"
-      class="bg-cover bg-top- py-16 text-white"
-      style="background-image: url('https://morena.kz/large/chimb.jpg')"
-    >
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl font-bold text-center text-white mb-8">
-          Контакты
-        </h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Карточка 1 -->
-          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-            <div class="text-blue-600 text-4xl mb-4">
-              <i class="fas fa-phone"></i>
+        id="contact"
+        class="bg-cover bg-top- py-16 text-white"
+        style="background-image: url('https://morena.kz/large/chimb.jpg')"
+      >
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 class="text-4xl font-bold text-center text-white mb-8">
+            Контакты
+          </h1>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Карточка 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+              <div class="text-blue-600 text-4xl mb-4">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h2 class="text-xl font-bold text-gray-800">Телефон</h2>
+              <p class="text-gray-600">+7 (777) 023-04-80</p>
             </div>
-            <h2 class="text-xl font-bold text-gray-800">Телефон</h2>
-            <p class="text-gray-600">+7 (777) 023-04-80</p>
-          </div>
-  
-          <!-- Карточка 2 -->
-          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-            <div class="text-blue-600 text-4xl mb-4">
-              <i class="fas fa-envelope"></i>
+
+            <!-- Карточка 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+              <div class="text-blue-600 text-4xl mb-4">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h2 class="text-xl font-bold text-gray-800">Email</h2>
+              <p class="text-gray-600">info@alma-hike.kz</p>
             </div>
-            <h2 class="text-xl font-bold text-gray-800">Email</h2>
-            <p class="text-gray-600">info@alma-hike.kz</p>
-          </div>
-  
-          <!-- Карточка 3 -->
-          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-            <div class="text-blue-600 text-4xl mb-4">
-              <i class="fas fa-map-marker-alt"></i>
+
+            <!-- Карточка 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+              <div class="text-blue-600 text-4xl mb-4">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h2 class="text-xl font-bold text-gray-800">Адрес</h2>
+              <p class="text-gray-600">г. Алматы, пр. Достык 103</p>
             </div>
-            <h2 class="text-xl font-bold text-gray-800">Адрес</h2>
-            <p class="text-gray-600">г. Алматы, пр. Достык 103</p>
           </div>
         </div>
-      </div>
-    </section>
-       </div>  
+      </section>
     </div>
+    <script src="app.js" defer></script>
   </body>
 </html>
