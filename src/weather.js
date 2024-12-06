@@ -1,30 +1,7 @@
-// Находим элемент хедера
-const navbar = document.getElementById("navbar");
-
-// Отслеживание последней позиции прокрутки
-let lastScrollY = window.scrollY;
-
-// Добавляем событие прокрутки
-window.addEventListener("scroll", () => {
-  if (window.scrollY > lastScrollY) {
-    // Прокрутка вниз - скрываем хедер
-    navbar.classList.remove("navbar-visible");
-    navbar.classList.add("navbar-hidden");
-  } else {
-    // Прокрутка вверх - показываем хедер
-    navbar.classList.remove("navbar-hidden");
-    navbar.classList.add("navbar-visible");
-  }
-  lastScrollY = window.scrollY; // Обновляем позицию прокрутки
-});
-
-//
-
 const lat = 43.03;
 const lon = 77.06;
 
 const apiKey = "99ed8539e8a46322affc805ad209b4d6";
-// const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,alerts&appid=${apiKey}&lang=ru&units=metric`;
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&lang=ru&units=metric`;
 
 function getWeather() {
@@ -79,10 +56,3 @@ function safetyMeasurement(windSpeed, temp) {
 
 // Запускаем функцию
 getWeather();
-
-//Бургер
-
-document.querySelector(".burger").addEventListener("click", function () {
-  this.classList.toggle("active");
-  document.querySelector(".nav").classList.toggle("open");
-});

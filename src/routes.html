@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link href="output.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="../media/montain-icon.png" />
+    <script src="scroll.js" defer></script>
     <style>
       body {
         margin: 0;
@@ -186,12 +187,29 @@
           padding: 0.75rem;
         }
       }
+      /* Скрытие хедера */
+      .navbar-hidden {
+        transform: translateY(-100%);
+      }
+
+      .navbar-visible {
+        transform: translateY(0);
+      }
+
+      #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+        transition: transform 0.3s ease-in-out;
+      }
     </style>
   </head>
   <body>
     <header
       id="navbar"
-      class="bg-white shadow-md fixed top-0 w-full z-50 transform transition-transform duration-300"
+      class="navbar-visible bg-white shadow-md fixed top-0 w-full z-50 transform transition-transform duration-300"
     >
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-around items-center py-4">
